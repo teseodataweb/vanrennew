@@ -12,6 +12,13 @@
   background-size: cover;
 }
 
+.about-img-section3 {
+  background-image: url(../img/pages/servicios/preguntas/faq-2-image.webp);
+  background-size: auto 100%;
+  background-position: center;
+  border-radius: 0 25% 25% 25%;
+}
+
 .icono {
   width: 60px;
   height: 60px;
@@ -51,4 +58,32 @@
 
 .about-shape:before {
   background: unset;
+}
+
+.far.fa-check {
+  color: #51966a;
+  position: relative;
+  padding-right: 1%;
+  padding-top: 5%;
+}
+
+.col-lg-6 .single-service.pricing2 i {
+  color: #51966a;
+  font-size: 70px;
+}
+
+.col-lg-6:hover .single-service.pricing2 i{
+  color: #fff;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card-header h5 {
+  color: #343a40;
+}
+
+.card-header:hover h5 {
+  color: #22cd6f;
 }
