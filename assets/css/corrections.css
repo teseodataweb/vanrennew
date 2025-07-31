@@ -1,0 +1,54 @@
+.wlc-author-1 {
+  bottom: 25%;
+}
+
+.about-img-section1 {
+  background-image: url(../img/pages/index/acerca_de/p2.webp);
+  background-size: cover;
+}
+
+.about-img-section2 {
+  background-image: url(../img/pages/index/acerca_de/p3.webp);
+  background-size: cover;
+}
+
+.icono {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.icono i {
+  color: #ccc;
+  transition: all 0.3s ease;
+  font-size: 30px;
+}
+
+.icono:hover {
+  background-color: #333;
+  border-color: #333;
+}
+
+.icono:hover i {
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .icono {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icono i {
+    font-size: 20px;
+  }
+}
+
+.about-shape:before {
+  background: unset;
+}
