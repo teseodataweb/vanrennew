@@ -72,11 +72,11 @@
   font-size: 70px;
 }
 
-.col-lg-6:hover .single-service.pricing2 i{
+.col-lg-6:hover .single-service.pricing2 i {
   color: #fff;
 }
 
-.card {
+.accordion .card {
   cursor: pointer;
 }
 
@@ -90,16 +90,43 @@
 
 .whatsapp-btn {
   position: fixed;
-  bottom: 40px;
-  right: 20px;
-  background-color: #25D366;
+  bottom: 0%;
+  left: 10%;
+  background-color: #25d366;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   color: #fff;
-  padding: 15px 15px;
+  padding: 12px 12px;
   border-radius: 50%;
-  font-size: 25px;
+  font-size: 35px;
   z-index: 1000;
+  transition: all 0.3s ;
+  opacity: 0;
+}
+
+.whatsapp-btn.show {
+  bottom: 5%;
+  opacity: 1;
 }
 
 .whatsapp-btn:hover {
-  background-color: #2ecc71;
+  background-color: #fff;
+  color: #25d366;
+}
+
+.service-icon i {
+    font-size: 70px;
+}
+
+.single-service.pricing2:hover .service-icon i {
+    color: #fff;
+}
+
+.navbarmneuclass .call-btn-mobile,
+.navbarmneuclass .location-btn-mobile
+{
+    display: none !important;
+}
+
+.navbarmneuclass .close-menu {
+    color: #fff;
 }
