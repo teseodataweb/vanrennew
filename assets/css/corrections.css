@@ -1,17 +1,25 @@
+/* Index/Hero Section
+  Cambia la posicion la imagen en el hero de la pagina de inicio
+*/
 .wlc-author-1 {
   bottom: 25%;
 }
 
+/* Index/Acerca de
+  Cambia la imagen de fondo en acerca de la pagina de inicio
+*/
 .about-img-section1 {
   background-image: url(../img/pages/index/acerca_de/p2.webp);
   background-size: cover;
 }
 
+/* Index/Acerca de
+  Ya no se usan, pero se dejan por si acaso
+*/
 .about-img-section2 {
   background-image: url(../img/pages/index/acerca_de/p3.webp);
   background-size: cover;
 }
-
 .about-img-section3 {
   background-image: url(../img/pages/servicios/preguntas/faq-2-image.webp);
   background-size: auto 100%;
@@ -19,75 +27,46 @@
   border-radius: 0 25% 25% 25%;
 }
 
-.icono {
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  border: 2px solid #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.3s ease;
-}
-
-.icono i {
-  color: #ccc;
-  transition: all 0.3s ease;
-  font-size: 30px;
-}
-
-.icono:hover {
-  background-color: #333;
-  border-color: #333;
-}
-
-.icono:hover i {
-  color: #fff;
-}
-
-@media (max-width: 768px) {
-  .icono {
-    width: 40px;
-    height: 40px;
-  }
-
-  .icono i {
-    font-size: 20px;
-  }
-}
-
+/* Index/Acerca de
+Desactiva una imagen de fondo
+*/
 .about-shape:before {
   background: unset;
 }
 
+/* Servicios/Hero
+  Controla aspectos de los iconos de los bullets
+*/
 .far.fa-check {
   color: #51966a;
   position: relative;
   padding-right: 1%;
   padding-top: 5%;
 }
-
 .col-lg-6 .single-service.pricing2 i {
   color: #51966a;
   font-size: 70px;
 }
-
 .col-lg-6:hover .single-service.pricing2 i {
   color: #fff;
 }
 
+/* Servicios/elegir
+  Controla aspectos de los desplegables
+*/
 .accordion .card {
   cursor: pointer;
 }
-
 .card-header h5 {
   color: #343a40;
 }
-
 .card-header:hover h5 {
   color: #22cd6f;
 }
 
+/* Whatsapp
+  Cambia la posicion y el estilo del boton de whatsapp
+*/
 .whatsapp-btn {
   position: fixed;
   bottom: 0%;
@@ -102,31 +81,34 @@
   transition: all 0.3s ;
   opacity: 0;
 }
-
 .whatsapp-btn.show {
   bottom: 5%;
   opacity: 1;
 }
-
 .whatsapp-btn:hover {
   background-color: #fff;
   color: #25d366;
 }
 
+/* Servicios/Hero
+  Controla aspectos de los iconos check
+*/
 .service-icon i {
     font-size: 70px;
 }
 
+
+/* Menu Cellphone
+  Controla aspectos de funcionamiento del menu en celular
+*/
 .single-service.pricing2:hover .service-icon i {
     color: #fff;
 }
-
 .navbarmneuclass .call-btn-mobile,
 .navbarmneuclass .location-btn-mobile
 {
     display: none !important;
 }
-
 .navbarmneuclass .close-menu {
     color: #fff;
 }
