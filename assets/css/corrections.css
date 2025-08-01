@@ -87,3 +87,19 @@
 .card-header:hover h5 {
   color: #22cd6f;
 }
+
+.whatsapp-btn {
+  position: fixed;
+  bottom: 40px;
+  right: 20px;
+  background-color: #25D366;
+  color: #fff;
+  padding: 15px 15px;
+  border-radius: 50%;
+  font-size: 25px;
+  z-index: 1000;
+}
+
+.whatsapp-btn:hover {
+  background-color: #2ecc71;
+}
