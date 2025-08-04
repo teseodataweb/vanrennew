@@ -57,11 +57,11 @@ Desactiva una imagen de fondo
 .accordion .card {
   cursor: pointer;
 }
-.card-header h5 {
+.card h5 {
   color: #343a40;
 }
-.card-header:hover h5 {
-  color: #22cd6f;
+.card:hover h5 {
+  color: #629F78;
 }
 
 /* Whatsapp
@@ -73,8 +73,8 @@ Desactiva una imagen de fondo
   left: 10%;
   background-color: #629f78;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  color: #ffeef6;
-  border: 1px solid #ffeef6;
+  color: #fff;
+  border: 1px solid #fff;
   padding: 12px 12px;
   border-radius: 50%;
   font-size: 35px;
@@ -87,7 +87,7 @@ Desactiva una imagen de fondo
   opacity: 1;
 }
 .whatsapp-btn:hover {
-  background: #ffeef6;
+  background: #fff;
   color: #3d4b67;
   border-color: #3d4b67;
 }
@@ -141,11 +141,11 @@ body {
 }
 
 .stellarnav.light.mobile.active li a:hover {
-  color: #ffeef6;
+  color: #fff;
 }
 
 .stellarnav > ul > li:after {
-  background: #ffeef6;
+  background: #fff;
 }
 
 .footer-area1 {
@@ -158,11 +158,11 @@ a {
 }
 
 a:hover {
-  color: #ffeef6;
+  color: #fff;
 }
 
 .copyright span {
-  color: #ffeef6;
+  color: #fff;
 }
 
 .copyright {
@@ -171,11 +171,11 @@ a:hover {
 
 a.up-btn {
   background: #629f78;
-  color: #ffeef6;
-  border-color: #ffeef6;
+  color: #fff;
+  border-color: #fff;
 }
 a.up-btn:hover {
-  background: #ffeef6;
+  background: #fff;
   color: #3d4b67;
   border-color: #3d4b67;
 }
@@ -190,17 +190,17 @@ a.up-btn:hover {
 
 a.cbtn.cbnt1 {
   background-color: #629f78;
-  color: #ffeef6;
-  border-color: #ffeef6;
+  color: #fff;
+  border-color: #fff;
 }
 a.cbtn.cbnt1:hover {
   border-color: #3d4b67;
   color: #3d4b67;
-  background-color: #ffeef6;
+  background-color: #fff;
 }
-a.cbtn.cbnt1:hover i{
+a.cbtn.cbnt1:hover i {
   border-color: #3d4b67;
-  color: #ffeef6;
+  color: #fff;
   background-color: #629f78;
 }
 
@@ -210,7 +210,7 @@ a.cbtn.cbnt1:hover i{
 
 .single-service {
   background: #3d4b67;
-  border: 1px solid #ffeef6;
+  border: 1px solid #fff;
 }
 .single-service:hover {
   background: #629f78;
@@ -220,47 +220,90 @@ span.circle.circle-1 {
   background: #77b78f;
 }
 span.circle.circle-2 {
-  background: #629F78;
+  background: #629f78;
 }
 span.circle.circle-3 {
-  background: #547E64;
+  background: #547e64;
 }
 span.circle.circle-4 {
   background: #3d4b67;
 }
 
 h6 {
-    color: #F6F6FE;
+  color: #f6f6fe;
 }
 
 .service-text h4 {
-    color: #629F78 !important;
+  color: #629f78 !important;
 }
 
 .single-service:hover .service-text h4 {
-    color: #3d4b67;
+  color: #3d4b67;
 }
 
 .service-text p {
-    color: #F6F6FE;
+  color: #f6f6fe;
 }
 
-.single-service:hover .service-text h4{
-  color: #F6F6FE !important;
+.single-service:hover .service-text h4 {
+  color: #f6f6fe !important;
 }
 
 .testimonials-area1 {
-    background: #3d4b67;
+  background: #3d4b67;
 }
 
 .testimonials .owl-nav > div {
-    border-color: #F6F6FE;
-    color: #F6F6FE;
-    background-color: #629F78;
+  border-color: #f6f6fe;
+  color: #f6f6fe;
+  background-color: #629f78;
 }
 
 .testimonials .owl-nav > div:hover {
-    background-color: #F6F6FE;
-    border-color: #3d4b67;
-    color: #3d4b67;
+  background-color: #f6f6fe;
+  border-color: #3d4b67;
+  color: #3d4b67;
+}
+
+.welcome-area-wrap {
+  background-color: #343a40;
+}
+
+.inner-filltext h1 {
+  -webkit-text-stroke: 1px #f6f6fe;
+}
+
+body .servicios,
+body .servicios .service-text p,
+body .servicios .card-body{
+  color: #343a40;
+}
+
+.service-primery .single-service {
+    border-color: #343a40;
+}
+.service-primery .single-service:hover {
+    background-color: #629f78;
+    border-color: #f6f6fe;
+}
+
+.primery-heading small {
+    color: #629f78 !important;
+}
+
+a.subscribe-btn {
+    background-color: #629f78;
+    color: #fff;
+    border-color: #fff;
+}
+
+a.subscribe-btn:hover {
+  border-color: #3d4b67;
+  color: #3d4b67;
+  background-color: #fff;
+}
+a.subscribe-btn:hover i {
+  border-color: #3d4b67;
+  color: #fff;
+  background-color: #629f78;
 }
