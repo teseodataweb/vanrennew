@@ -54,14 +54,15 @@ Desactiva una imagen de fondo
 /* Servicios/elegir
   Controla aspectos de los desplegables
 */
-.accordion .card {
+.accordion .card,
+.country-flag {
   cursor: pointer;
 }
 .card h5 {
   color: #343a40;
 }
 .card:hover h5 {
-  color: #629F78;
+  color: #629f78;
 }
 
 /* Whatsapp
@@ -117,6 +118,16 @@ Desactiva una imagen de fondo
   background: none;
 }
 
+/* Correccion de mayusculas
+  Se corrige el uso de mayusculas en el sitio
+*/
+h1, h2, h3, h4, h5, h6, p, span, a {
+  text-transform: none !important;
+}
+
+/* ---------------------------- */
+/* ---------------------------- */
+/* ---------------------------- */
 /* Correccion de colores 
   Se hacen las correcciones de colores correspondientes al sitio
 */
@@ -275,26 +286,26 @@ h6 {
 
 body .servicios,
 body .servicios .service-text p,
-body .servicios .card-body{
+body .servicios .card-body {
   color: #343a40;
 }
 
 .service-primery .single-service {
-    border-color: #343a40;
+  border-color: #343a40;
 }
 .service-primery .single-service:hover {
-    background-color: #629f78;
-    border-color: #f6f6fe;
+  background-color: #629f78;
+  border-color: #f6f6fe;
 }
 
 .primery-heading small {
-    color: #629f78 !important;
+  color: #629f78 !important;
 }
 
 a.subscribe-btn {
-    background-color: #629f78;
-    color: #fff;
-    border-color: #fff;
+  background-color: #629f78;
+  color: #fff;
+  border-color: #fff;
 }
 
 a.subscribe-btn:hover {
@@ -306,4 +317,17 @@ a.subscribe-btn:hover i {
   border-color: #3d4b67;
   color: #fff;
   background-color: #629f78;
+}
+
+.heading small {
+  color: #629f78 !important;
+}
+
+.info-content {
+  border-color: #629f78;
+}
+
+.country-flag:hover {
+  background-color: #fff;
+  color: #629f78;
 }
