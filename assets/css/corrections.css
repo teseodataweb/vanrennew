@@ -71,14 +71,15 @@ Desactiva una imagen de fondo
   position: fixed;
   bottom: 0%;
   left: 10%;
-  background-color: #25d366;
+  background-color: #629f78;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: #ffeef6;
+  border: 1px solid #ffeef6;
   padding: 12px 12px;
   border-radius: 50%;
   font-size: 35px;
   z-index: 1000;
-  transition: all 0.3s ;
+  transition: all 0.3s;
   opacity: 0;
 }
 .whatsapp-btn.show {
@@ -86,29 +87,180 @@ Desactiva una imagen de fondo
   opacity: 1;
 }
 .whatsapp-btn:hover {
-  background-color: #fff;
-  color: #25d366;
+  background: #ffeef6;
+  color: #3d4b67;
+  border-color: #3d4b67;
 }
 
 /* Servicios/Hero
   Controla aspectos de los iconos check
 */
 .service-icon i {
-    font-size: 70px;
+  font-size: 70px;
 }
-
 
 /* Menu Cellphone
   Controla aspectos de funcionamiento del menu en celular
 */
 .single-service.pricing2:hover .service-icon i {
-    color: #fff;
+  color: #fff;
 }
 .navbarmneuclass .call-btn-mobile,
-.navbarmneuclass .location-btn-mobile
-{
-    display: none !important;
+.navbarmneuclass .location-btn-mobile {
+  display: none !important;
 }
 .navbarmneuclass .close-menu {
-    color: #fff;
+  color: #fff;
+}
+
+.welcome__wrap1 {
+  background: none;
+}
+
+/* Correccion de colores 
+  Se hacen las correcciones de colores correspondientes al sitio
+*/
+.site-black {
+  background: #3d4b67;
+}
+
+body {
+  color: #f6f6fe;
+}
+
+.header-area.sticky {
+  background: #629f78;
+}
+
+.stellarnav.mobile.active.light ul {
+  background: #629f78;
+}
+
+.stellarnav.light li a {
+  color: #f6f6fe;
+}
+
+.stellarnav.light.mobile.active li a:hover {
+  color: #ffeef6;
+}
+
+.stellarnav > ul > li:after {
+  background: #ffeef6;
+}
+
+.footer-area1 {
+  background-image: none;
+  background-color: #629f78;
+}
+
+a {
+  color: #3d4b67;
+}
+
+a:hover {
+  color: #ffeef6;
+}
+
+.copyright span {
+  color: #ffeef6;
+}
+
+.copyright {
+  color: #3d4b67;
+}
+
+a.up-btn {
+  background: #629f78;
+  color: #ffeef6;
+  border-color: #ffeef6;
+}
+a.up-btn:hover {
+  background: #ffeef6;
+  color: #3d4b67;
+  border-color: #3d4b67;
+}
+
+.wlc-title h1 span {
+  color: #629f78;
+}
+
+.wlc-title p {
+  border-color: #629f78;
+}
+
+a.cbtn.cbnt1 {
+  background-color: #629f78;
+  color: #ffeef6;
+  border-color: #ffeef6;
+}
+a.cbtn.cbnt1:hover {
+  border-color: #3d4b67;
+  color: #3d4b67;
+  background-color: #ffeef6;
+}
+a.cbtn.cbnt1:hover i{
+  border-color: #3d4b67;
+  color: #ffeef6;
+  background-color: #629f78;
+}
+
+.heading h2 span {
+  color: #629f78;
+}
+
+.single-service {
+  background: #3d4b67;
+  border: 1px solid #ffeef6;
+}
+.single-service:hover {
+  background: #629f78;
+  border: 1px solid #3d4b67;
+}
+span.circle.circle-1 {
+  background: #77b78f;
+}
+span.circle.circle-2 {
+  background: #629F78;
+}
+span.circle.circle-3 {
+  background: #547E64;
+}
+span.circle.circle-4 {
+  background: #3d4b67;
+}
+
+h6 {
+    color: #F6F6FE;
+}
+
+.service-text h4 {
+    color: #629F78 !important;
+}
+
+.single-service:hover .service-text h4 {
+    color: #3d4b67;
+}
+
+.service-text p {
+    color: #F6F6FE;
+}
+
+.single-service:hover .service-text h4{
+  color: #F6F6FE !important;
+}
+
+.testimonials-area1 {
+    background: #3d4b67;
+}
+
+.testimonials .owl-nav > div {
+    border-color: #F6F6FE;
+    color: #F6F6FE;
+    background-color: #629F78;
+}
+
+.testimonials .owl-nav > div:hover {
+    background-color: #F6F6FE;
+    border-color: #3d4b67;
+    color: #3d4b67;
 }
