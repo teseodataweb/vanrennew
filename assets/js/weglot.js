@@ -1,28 +1,41 @@
-const flags = document.querySelectorAll(".country-flag");
+document.addEventListener("DOMContentLoaded", function () {
 
-flags.forEach((flag) => {
-  flag.addEventListener("click", () => {
-    const lang = flag.getAttribute("data-lang");
-    // Llama a la función de traducción con el idioma seleccionado
-    translateSite(lang);
+    function initWeglotWhenReady() {
+      if (typeof Weglot === 'undefined') {
+        console.warn('Weglot not ready, retrying...');
+        setTimeout(initWeglotWhenReady, 100);
+        return;
+      }
+      try {
+        Weglot.init({
+          api_key: "wg_f618157c2837653c3b79e24fe1a42ba70",
+          lang: "es",
+          default_lang: "es"
+        });
+        console.log("Weglot initialized");
+      } catch (e) {
+        console.error("Weglot init error:", e);
+      }
+
+      const flags = document.querySelectorAll(".country-flag");
+
+      flags.forEach((flag) => {
+        flag.addEventListener("click", () => {
+          const lang = flag.getAttribute("data-lang");
+          console.log("Switching to language:", lang);
+          translateSite(lang);
+        });
+      });
+
+      function translateSite(lang) {
+        try {
+          Weglot.translate(lang);
+          console.log("Weglot.translate called with:", lang);
+        } catch (e) {
+          console.error("Weglot.translate error:", e);
+        }
+      }
+    }
+
+    initWeglotWhenReady();
   });
-});
-
-function translateSite(lang) {
-  // Utiliza Weglot para traducir el sitio web
-  Weglot.translate(lang);
-  // Otra opción es utilizar una biblioteca de traducción como Google Translate
-  // google.translate.Translate(lang, 'es', 'en');
-}
-
-Weglot.init({
-  api_key: "",
-  lang: "es",
-  default_lang: "es",
-  url_pattern: "/:lang",
-});
-
-const usaFlag = document.querySelector('.country-flag[data-lang="en"]');
-usaFlag.addEventListener("click", () => {
-  Weglot.translate("en");
-});

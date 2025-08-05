@@ -224,21 +224,21 @@
                 <form action="#">
                   <input
                     type="text"
-                    placeholder="Nombre completo / Full Name"
+                    placeholder="Nombre completo"
                     required
                   />
                   <input
                     type="email"
-                    placeholder="Correo electrónico / Email Address"
+                    placeholder="Correo electrónico"
                     required
                   />
                   <input
                     type="tel"
-                    placeholder="Teléfono / Telephone"
+                    placeholder="Teléfono"
                     required
                   />
-                  <input type="text" placeholder="Empresa / Company Name" />
-                  <input type="text" placeholder="Cargo / Job Title" />
+                  <input type="text" placeholder="Nombre de la empresa" />
+                  <input type="text" placeholder="Cargo de trabajo" />
                   <textarea
                     name="mensaje"
                     id="mensaje"
@@ -341,7 +341,17 @@
     <script src="assets/js/plugins/isotop.v3.0.4.min.js"></script>
     <script src="assets/js/main.js"></script>
     <script src="assets/js/whatsapp_Button.js"></script>
-    <script src="assets/js/weglot.js"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/weglot@2.0.0/dist/weglot.min.js"></script>
+    <script src="assets/js/weglot.js"></script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.weglot.com/weglot.min.js"
+    ></script>
+    <script>
+      Weglot.initialize({
+        api_key: "wg_f618157c2837653c3b79e24fe1a42ba70",
+      });
+    </script>
 
     <script
       defer
