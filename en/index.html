@@ -75,29 +75,8 @@
     <link rel="stylesheet" href="../assets/css/inner.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
     <link rel="stylesheet" href="../assets/css/corrections.css" />
+    
   </head>
-  <script>
-    const lang = navigator.language || navigator.userLanguage;
-    const userLangPref = localStorage.getItem('langPref');
-    const isEnglishPage = window.location.pathname.startsWith("/en");
-  
-    // Si el usuario ya eligió un idioma, usa esa preferencia
-    if (userLangPref === 'en' && !isEnglishPage) {
-      window.location.href = '/en/';
-    } else if (userLangPref === 'es' && isEnglishPage) {
-      window.location.href = '/';
-    } else if (!userLangPref) {
-      // Si no hay preferencia, detecta idioma del navegador
-      if (lang.startsWith('en') && !isEnglishPage) {
-        window.location.href = '/en/';
-      }
-    }
-  </script>
-  
-  <link rel="alternate" hreflang="es" href="https://consultoriavanren.com/" />
-  <link rel="alternate" hreflang="en" href="https://consultoriavanren.com/en/" />
-  
-  
   <!--HEADE END-->
 
   <body>
@@ -112,48 +91,52 @@
     <div class="site site-black">
       <!--::::: SITE AREA START :::::::-->
 
-      <!--::::: HEADER AREA START :::::::-->
-      <div class="header-area header-main" id="header">
-        <!--scroll to up btn-->
-        <a href="#" class="up-btn"><i class="fal fa-angle-up"></i></a>
-        <div class="container">
-          <div class="row">
-            <div class="col-6 col-lg-3 align-self-center">
-              <a href="index.html" class="logo">
-                <img src="../assets/img/icon/logo.webp" alt="Logo" />
-              </a>
-            </div>
+<!--::::: HEADER AREA START :::::::-->
+<div class="header-area header-main" id="header">
+  <!--scroll to up btn-->
+  <a href="#" class="up-btn"><i class="fal fa-angle-up"></i></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-lg-3 align-self-center">
+        <a href="index.html" class="logo">
+          <img src="../assets/img/icon/logo.webp" alt="Logo" />
+        </a>
+      </div>
 
-            <div class="col-6 text-center align-self-center ml-lg-auto">
-              <div class="main-menu">
-                <div class="stellarnav">
-                  <ul class="navbarmneuclass">
-                    <li class="current"><a href="./index.html">Inicio</a></li>
-                    <li><a href="./about.html">Servicios</a></li>
-                    <li>
-                      <a
-                        href="https://consultoriavanren.com/blog/author/admin/"
-                        target="_self"
-                      >
-                        Blog
-                      </a>
-                    </li>
-                    <li><a href="/contact.html">Contacto</a></li>
+      <div class="col-6 text-center align-self-center ml-lg-auto">
+        <div class="main-menu">
+          <div class="stellarnav">
+            <ul class="navbarmneuclass">
+              <li class="current"><a href="./index.html">Inicio</a></li>
+              <li><a href="./about.html">Servicios</a></li>
+              <li>
+                <a href="https://consultoriavanren.com/blog/author/admin/" target="_self">
+                  Blog
+                </a>
+              </li>
+              <li><a href="/contact.html">Contacto</a></li>
 
-                    <!-- Selector de idioma -->
-                    <li class="language-switch">
-                      <a href="/" onclick="localStorage.setItem('langPref','es')">Español</a>
-                      <a href="/en/" onclick="localStorage.setItem('langPref','en')">English</a>
-                    </li>
-                    <!-- Fin selector -->
-                  </ul>
-                </div>
-              </div>
-            </div>
+              <!-- Selector de idioma -->
+              <li class="language-switch">
+                <a href="#" class="lang-current">
+                  🌐 English <i class="fal fa-angle-down"></i>
+                </a>
+
+                <ul class="submenu">
+                  <li><a href="../">Español</a></li>
+                  <li><a href="./">English</a></li>
+                </ul>
+              </li>
+              <!-- Fin selector -->
+            </ul>
           </div>
         </div>
       </div>
-      <!--::::: HEADER AREA END :::::::-->
+    </div>
+  </div>
+</div>
+<!--::::: HEADER AREA END :::::::-->
+
 
       <!--:::::WELCOME ATRA START :::::::-->
       <div class="welcome-area-wrap welcome__wrap1">
@@ -350,7 +333,7 @@
             <div class="col-lg-6 offset-lg-1 align-self-center">
               <div class="heading white">
                 <h2>
-                  Siempre estamos
+                  Siempre estamos 
                   <span>contigo</span>
                 </h2>
                 <p>
@@ -382,26 +365,23 @@
                 <p class="card-text text-dark">
                   Soy Vanessa Martínez, fundadora de VanRen y Sales Manager en
                   Nueva York.
-                  <br />
-                  <br />
+                  <br /> <br>
                   Llegué a esta ciudad con sueños grandes, sola, sin contactos,
                   pero con hambre de crecer. Fui , migrante sin red, pasé por
                   muchos trabajos , mujer soñando en grande.
-                  <br /><br />
-                  Gracias a mi experiencia en ventas y liderazgo en empresas de
-                  Nueva York, junto con mi intuición emocional y mi historia
-                  personal, hoy ayudo a otras mujeres a construir negocios
-                  sólidos y vidas poderosas.
-                  <br />
-                  <br />
-                  VanRen nació para acompañarte a emprender con estrategia y
-                  corazón. Porque no se trata solo de vender… se trata de
-                  creértela, sostenerte y brillar.
+                  <br><br>
+                  Gracias a mi
+                  experiencia en ventas y liderazgo en empresas de Nueva York,
+                  junto con mi intuición emocional y mi historia personal, hoy
+                  ayudo a otras mujeres a construir negocios sólidos y vidas
+                  poderosas.
+                  <br /> <br>
+                  VanRen nació para acompañarte a emprender con
+                  estrategia y corazón. Porque no se trata solo de vender… se
+                  trata de creértela, sostenerte y brillar.
                   <br /><br />
                   <span style="font-size: 1.3rem">
-                    “No nací empresaria. Me hice, paso a paso, con hambre,
-                    lágrimas y visión. Si yo pude transformar mi historia en
-                    poder, tú también puedes.”
+                    “No nací empresaria. Me hice, paso a paso, con hambre, lágrimas y visión. Si yo pude transformar mi historia en poder, tú también puedes.”
                   </span>
                 </p>
               </div>
@@ -426,12 +406,7 @@
             <div class="col-lg-6 align-self-center">
               <div class="info-content">
                 <p>
-                  En VanRen, combinamos habilidades especializadas en ventas y
-                  coaching emocional para crear soluciones que impulsan tu
-                  negocio y tu crecimiento personal. Nuestra experiencia nos
-                  permite entender los retos comerciales desde un lugar humano,
-                  ofreciendo estrategias personalizadas que conectan con tus
-                  clientes y fortalecen tu liderazgo.
+                  En VanRen, combinamos habilidades especializadas en ventas y coaching emocional para crear soluciones que impulsan tu negocio y tu crecimiento personal. Nuestra experiencia nos permite entender los retos comerciales desde un lugar humano, ofreciendo estrategias personalizadas que conectan con tus clientes y fortalecen tu liderazgo.
                 </p>
               </div>
             </div>
@@ -449,8 +424,7 @@
                   <div class="service-text">
                     <h4>Acompañarte de sobrevivir a brillar</h4>
                     <p>
-                      Sanar tu historia, recuperar tu voz y empezar un nuevo
-                      capítulo con fuerza.
+                      Sanar tu historia, recuperar tu voz y empezar un nuevo capítulo con fuerza.
                     </p>
                   </div>
                   <div class="circles-wrap">
@@ -471,8 +445,7 @@
                   <div class="service-text">
                     <h4>Conectar, no solo convencer</h4>
                     <p>
-                      Aprender a vender desde la empatía y tu autenticidad, sin
-                      scripts vacíos.
+                      Aprender a vender desde la empatía y tu autenticidad, sin scripts vacíos.
                     </p>
                   </div>
                   <div class="circles-wrap">
@@ -493,8 +466,7 @@
                   <div class="service-text">
                     <h4>Entrenamiento emocional para cerrar con seguridad</h4>
                     <p>
-                      Superar el miedo al rechazo y sostener tu valor al momento
-                      de vender.
+                      Superar el miedo al rechazo y sostener tu valor al momento de vender.
                     </p>
                   </div>
                   <div class="circles-wrap">
@@ -515,8 +487,7 @@
                   <div class="service-text">
                     <h4>Convertir tu historia en estrategia de ventas</h4>
                     <p>
-                      Usar tu camino personal como tu mayor herramienta para
-                      atraer, impactar y vender.
+                      Usar tu camino personal como tu mayor herramienta para atraer, impactar y vender.
                     </p>
                   </div>
                   <div class="circles-wrap">
@@ -537,8 +508,7 @@
                   <div class="service-text">
                     <h4>Vender sin traicionar tu energía</h4>
                     <p>
-                      Porque no necesitas forzarte ni parecer otra para tener
-                      éxito.
+                      Porque no necesitas forzarte ni parecer otra para tener éxito.
                     </p>
                   </div>
                   <div class="circles-wrap">
