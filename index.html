@@ -74,25 +74,11 @@
     <link rel="stylesheet" href="../assets/css/button.css" />
     <link rel="stylesheet" href="../assets/css/inner.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
-    <link rel="stylesheet" href="../assets/css/corrections.css" />
+    <link rel="stylesheet" href="../assets/css/corrections.css" /> 
+      
+
   </head>
-  <script>
-    const lang = navigator.language || navigator.userLanguage;
-    const userLangPref = localStorage.getItem('langPref');
-    const isEnglishPage = window.location.pathname.startsWith("/en");
   
-    // Si el usuario ya eligió un idioma, usa esa preferencia
-    if (userLangPref === 'en' && !isEnglishPage) {
-      window.location.href = '/en/';
-    } else if (userLangPref === 'es' && isEnglishPage) {
-      window.location.href = '/';
-    } else if (!userLangPref) {
-      // Si no hay preferencia, detecta idioma del navegador
-      if (lang.startsWith('en') && !isEnglishPage) {
-        window.location.href = '/en/';
-      }
-    }
-  </script>
   
   <link rel="alternate" hreflang="es" href="https://consultoriavanren.com/" />
   <link rel="alternate" hreflang="en" href="https://consultoriavanren.com/en/" />
@@ -112,48 +98,52 @@
     <div class="site site-black">
       <!--::::: SITE AREA START :::::::-->
 
-      <!--::::: HEADER AREA START :::::::-->
-      <div class="header-area header-main" id="header">
-        <!--scroll to up btn-->
-        <a href="#" class="up-btn"><i class="fal fa-angle-up"></i></a>
-        <div class="container">
-          <div class="row">
-            <div class="col-6 col-lg-3 align-self-center">
-              <a href="index.html" class="logo">
-                <img src="../assets/img/icon/logo.webp" alt="Logo" />
-              </a>
-            </div>
+    <!--::::: HEADER AREA START :::::::-->
+<div class="header-area header-main" id="header">
+  <!--scroll to up btn-->
+  <a href="#" class="up-btn"><i class="fal fa-angle-up"></i></a>
+  <div class="container">
+    <div class="row">
+      <div class="col-6 col-lg-3 align-self-center">
+        <a href="index.html" class="logo">
+          <img src="../assets/img/icon/logo.webp" alt="Logo" />
+        </a>
+      </div>
 
-            <div class="col-6 text-center align-self-center ml-lg-auto">
-              <div class="main-menu">
-                <div class="stellarnav">
-                  <ul class="navbarmneuclass">
-                    <li class="current"><a href="./index.html">Inicio</a></li>
-                    <li><a href="./about.html">Servicios</a></li>
-                    <li>
-                      <a
-                        href="https://consultoriavanren.com/blog/author/admin/"
-                        target="_self"
-                      >
-                        Blog
-                      </a>
-                    </li>
-                    <li><a href="/contact.html">Contacto</a></li>
+      <div class="col-6 text-center align-self-center ml-lg-auto">
+        <div class="main-menu">
+          <div class="stellarnav">
+            <ul class="navbarmneuclass">
+              <li class="current"><a href="./index.html">Inicio</a></li>
+              <li><a href="./about.html">Servicios</a></li>
+              <li>
+                <a href="https://consultoriavanren.com/blog/author/admin/" target="_self">
+                  Blog
+                </a>
+              </li>
+              <li><a href="/contact.html">Contacto</a></li>
 
-                    <!-- Selector de idioma -->
-                    <li class="language-switch">
-                      <a href="/" onclick="localStorage.setItem('langPref','es')">Español</a>
-                      <a href="/en/" onclick="localStorage.setItem('langPref','en')">English</a>
-                    </li>
-                    <!-- Fin selector -->
-                  </ul>
-                </div>
-              </div>
-            </div>
+              <!-- Selector de idioma -->
+              <li class="language-switch">
+                <a href="#" class="lang-current">
+                  🌐 English <i class="fal fa-angle-down"></i>
+                </a>
+
+                <ul class="submenu">
+                  <li><a href="/">Español</a></li>
+                  <li><a href="en/">English</a></li>
+                </ul>
+              </li>
+              <!-- Fin selector -->
+            </ul>
           </div>
         </div>
       </div>
-      <!--::::: HEADER AREA END :::::::-->
+    </div>
+  </div>
+</div>
+<!--::::: HEADER AREA END :::::::-->
+
 
       <!--:::::WELCOME ATRA START :::::::-->
       <div class="welcome-area-wrap welcome__wrap1">
