@@ -17,3 +17,44 @@
   background-color: #2596be !important; /* tono más oscuro */
   transform: scale(1.03);
 }
+
+
+/* Toast centrado */
+#toast {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0.8); /* inicio ligeramente más pequeño */
+    background-color: #08D665; /* verde éxito por defecto */
+    color: white;
+    padding: 20px 35px;
+    border-radius: 12px;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.35); /* sombra más profunda */
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    gap: 12px; /* espacio entre icono y texto */
+    pointer-events: none; /* no bloquea clicks */
+    z-index: 9999;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+/* Cuando se muestra */
+#toast.show {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+}
+
+/* Cuando se oculta */
+#toast.hide {
+    opacity: 0;
+    transform: translate(-50%, -50%) scale(0.8);
+}
+
+/* Opcional: icono dentro del toast */
+#toast span.icon {
+    font-size: 22px; /* un poco más grande que el texto */
+}
