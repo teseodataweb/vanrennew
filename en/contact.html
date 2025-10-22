@@ -227,24 +227,19 @@
               </div>
               <div class="space-20"></div>
               <div class="contact-form">
-                <form action="#">
-                  <input type="text" placeholder="Full Name," required />
-                  <input type="Email" placeholder="Email" required />
-                  <input type="tel" placeholder="Phone" required />
-                  <input type="text" placeholder="Company name" />
-                  <input type="text" placeholder="Job title." />
-                  <textarea
-                    name="mensaje"
-                    id="mensaje"
-                    cols="30"
-                    rows="3"
-                    placeholder="Message"
-                  ></textarea>
-                </form>
+                <form action="subir.php" method="POST">
+                <input type="text" name="nombre" placeholder="Full Name" required />
+                <input type="email" name="correo" placeholder="Email" required />
+                <input type="tel" name="telefono" placeholder="Phone" required />
+                <input type="text" name="empresa" placeholder="Company Name" />
+                <input type="text" name="cargo" placeholder="Job Title" />
+                <textarea name="mensaje" id="mensaje" cols="30" rows="3" placeholder="Message"></textarea>
                 <div class="space-20"></div>
-                <a href="#" class="subscribe-btn"
-                  >Send <i class="fal fa-comments-alt"></i
-                ></a>
+                <button type="submit" class="boton_enviar">
+                  Send <i class="fal fa-comments-alt"></i>
+                </button>
+                </form>
+
               </div>
             </div>
           </div>
@@ -356,6 +351,25 @@
       data-cf-beacon='{"version":"2024.11.0","token":"05c60afabf3e4b64ba091c1c292eafc9","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}'
       crossorigin="anonymous"
     ></script>
+    <script src="assets/js/subir.js"></script>
+
+
+    <!-- Toast de notificación -->
+<div id="toast" style="
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #08D665;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 8px;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    display: none;
+    z-index: 9999;
+"></div>
+
   </body>
   <!--BODY END-->
 
