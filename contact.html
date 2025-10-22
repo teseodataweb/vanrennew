@@ -74,6 +74,7 @@
     <link rel="stylesheet" href="../assets/css/inner.css" />
     <link rel="stylesheet" href="../assets/css/button.css" />
     <link rel="stylesheet" href="../assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/boton_enviar.css">
     <link rel="stylesheet" href="../assets/css/corrections.css" /></head
   ><!--HEADE END-->
 
@@ -223,36 +224,28 @@
           <div class="space-100"></div>
           <div class="row">
             <div class="col-lg-6 align-self-center mx-auto">
-              <div class="primery-heading">
-                <small>Agenda una cita</small>
-                <h2>Contáctanos</h2>
-              </div>
-              <div class="space-20"></div>
-              <div class="contact-form">
-                <form action="#">
-                  <input type="text" placeholder="Nombre completo" required />
-                  <input
-                    type="email"
-                    placeholder="Correo electrónico"
-                    required
-                  />
-                  <input type="tel" placeholder="Teléfono" required />
-                  <input type="text" placeholder="Nombre de la empresa" />
-                  <input type="text" placeholder="Cargo de trabajo" />
-                  <textarea
-                    name="mensaje"
-                    id="mensaje"
-                    cols="30"
-                    rows="3"
-                    placeholder="Mensaje / Message"
-                  ></textarea>
-                </form>
-                <div class="space-20"></div>
-                <a href="#" class="subscribe-btn"
-                  >Enviar/Send <i class="fal fa-comments-alt"></i
-                ></a>
-              </div>
+            <div class="primery-heading">
+              <small>Agenda una cita</small>
+              <h2>Contáctanos</h2>
             </div>
+            <div class="space-20"></div>
+            <div class="contact-form">
+              <form action="subir.php" method="POST">
+                <input type="text" name="nombre" placeholder="Nombre completo" required />
+                <input type="email" name="correo" placeholder="Correo electrónico" required />
+                <input type="tel" name="telefono" placeholder="Teléfono" required />
+                <input type="text" name="empresa" placeholder="Nombre de la empresa" />
+                <input type="text" name="cargo" placeholder="Cargo de trabajo" />
+                <textarea name="mensaje" id="mensaje" cols="30" rows="3" placeholder="Mensaje / Message"></textarea>
+
+                <div class="space-20"></div>
+                <button type="submit" class="boton_enviar">
+                  Enviar/Send <i class="fal fa-comments-alt"></i>
+                </button>
+              </form>
+            </div>
+          </div>
+
           </div>
         </div>
         <img
